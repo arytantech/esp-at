@@ -1,7 +1,9 @@
 name: Build ESP-AT Project
 
-on: push
-
+on:
+  push:
+  workflow_dispatch:
+  
 jobs:
   build-esp32-wroom-at:
     uses: ./.github/workflows/build_template_esp32.yml
